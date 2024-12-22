@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import Footer from './components/Footer';
 import Marketplace from './components/marketplace/Marketplace';
-import Community from './components/community/community';
+import Community from './components/community/Community';
 
 
 function App() {
