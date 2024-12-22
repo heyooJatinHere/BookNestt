@@ -6,7 +6,7 @@ function BookGrid({ books }) {
       <div className="text-center text-gray-600 py-8">
         No books found. Try a different search term.
       </div>
-    );
+    ); 
   }
 
   return (

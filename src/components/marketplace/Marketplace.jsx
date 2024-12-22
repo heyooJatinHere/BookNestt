@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import SearchBar from './SearchBar';
 import TagFilter from './TagFilter';
 import BookGrid from './BookGrid';

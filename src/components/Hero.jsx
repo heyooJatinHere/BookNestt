@@ -1,6 +1,17 @@
 import { FaSearch, FaUsers } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 function Hero() {
+  const navigate = useNavigate();
+
+  const handleBrowseBooksClick = () => {
+    navigate('/marketplace'); 
+  };
+
+  const handleJoinCommunityClick = () => {
+    navigate('/community');
+  };
+
   return (
     <div className="bg-gradient-to-r from-primary to-accent text-white py-20">
       <div className="container mx-auto px-4 text-center">
@@ -8,10 +19,19 @@ function Hero() {
         <p className="text-xl mb-12">Your Ultimate Book Marketplace and Community Hub</p>
         
         <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
-          <button className="bg-secondary hover:bg-opacity-90 text-white px-8 py-3 rounded-full flex items-center justify-center gap-2">
+          {/* Browse Books Button */}
+          <button
+            className="bg-secondary hover:bg-opacity-90 text-white px-8 py-3 rounded-full flex items-center justify-center gap-2"
+            onClick={handleBrowseBooksClick}
+          >
             <FaSearch /> Browse Books
           </button>
-          <button className="bg-white hover:bg-opacity-90 text-primary px-8 py-3 rounded-full flex items-center justify-center gap-2">
+
+          {/* Join Community Button */}
+          <button
+            className="bg-white hover:bg-opacity-90 text-primary px-8 py-3 rounded-full flex items-center justify-center gap-2"
+            onClick={handleJoinCommunityClick}
+          >
             <FaUsers /> Join Community
           </button>
         </div>
